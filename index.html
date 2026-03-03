@@ -66,6 +66,11 @@
     <title>New Gopal Motor Driving Training School | Government Approved Driving School in Rohini</title>
 </head>
 <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
     <!-- Floating Buttons -->
     <div class="floating-buttons">
         <a href="tel:+919871536071" class="fab-call" aria-label="Call Now">
@@ -79,7 +84,7 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">
+            <a href="#home" class="logo" data-animate="fade-right">
                 <div class="logo-icon">
                     <i class="fas fa-shield-alt"></i>
                 </div>
@@ -94,15 +99,15 @@
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#why-choose-us">Why Us</a></li>
-                <li><a href="#trainers">Trainers</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-animate="fade-down" style="--delay: 0">Home</a></li>
+                <li><a href="#about" data-animate="fade-down" style="--delay: 1">About</a></li>
+                <li><a href="#courses" data-animate="fade-down" style="--delay: 2">Courses</a></li>
+                <li><a href="#why-choose-us" data-animate="fade-down" style="--delay: 3">Why Us</a></li>
+                <li><a href="#trainers" data-animate="fade-down" style="--delay: 4">Trainers</a></li>
+                <li><a href="#reviews" data-animate="fade-down" style="--delay: 5">Reviews</a></li>
+                <li><a href="#gallery" data-animate="fade-down" style="--delay: 6">Gallery</a></li>
+                <li><a href="#faq" data-animate="fade-down" style="--delay: 7">FAQ</a></li>
+                <li><a href="#contact" data-animate="fade-down" style="--delay: 8">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -110,14 +115,15 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
+        <div class="hero-road-lines" aria-hidden="true"></div>
         <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-verified"></i>
+            <div class="hero-badge" data-animate="scale-in">
+                <i class="fas fa-certificate"></i>
                 <span>Government Authorized</span>
             </div>
-            <h1>Government Approved <br>Driving School in Rohini</h1>
-            <p class="hero-subtitle">30+ Years of Excellence in Professional Driving Training</p>
-            <div class="hero-rating">
+            <h1 data-animate="slide-up" data-delay="100">Government Approved <br><span class="highlight">Driving School</span> in Rohini</h1>
+            <p class="hero-subtitle" data-animate="slide-up" data-delay="200">30+ Years of Excellence in Professional Driving Training</p>
+            <div class="hero-rating" data-animate="slide-up" data-delay="300">
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -127,83 +133,120 @@
                 </div>
                 <span>3.9 Rating | 379+ Google Reviews</span>
             </div>
-            <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">Enroll Now</a>
+            <div class="hero-cta" data-animate="slide-up" data-delay="400">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Enroll Now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
                 <a href="tel:+919871536071" class="btn btn-secondary">
-                    <i class="fas fa-phone-alt"></i> Call Now
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call Now</span>
                 </a>
             </div>
-            <div class="hero-stats">
+            <div class="hero-stats" data-animate="slide-up" data-delay="500">
                 <div class="stat-item">
-                    <span class="stat-number">30+</span>
+                    <span class="stat-number" data-count="30">0</span>
                     <span class="stat-label">Years Experience</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">10000+</span>
+                    <span class="stat-number" data-count="10000">0</span>
                     <span class="stat-label">Students Trained</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">98%</span>
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-suffix">%</span>
                     <span class="stat-label">Pass Rate</span>
                 </div>
             </div>
         </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
     </section>
+
+    <!-- Road Divider -->
+    <div class="road-divider" aria-hidden="true">
+        <div class="road-line"></div>
+    </div>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="subtitle">About Us</span>
                 <h2>Welcome to New Gopal Motor Driving Training School</h2>
                 <div class="header-line"></div>
             </div>
             <div class="about-content">
-                <div class="about-image">
-                        <img src="assets/office photo.jpg" alt="Driving School" loading="lazy">
+                <div class="about-image" data-animate="slide-right">
+                        <img src="assets/office photo.jpg" alt="Driving School Office" loading="lazy">
                     <div class="about-badge">
                         <i class="fas fa-award"></i>
                         <span>30+ Years</span>
                     </div>
+                    <div class="experience-ring" aria-hidden="true">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="var(--secondary-color)" stroke-width="2" stroke-dasharray="283" stroke-dashoffset="283" class="progress-ring"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="about-text">
+                <div class="about-text" data-animate="slide-left">
                     <p>New Gopal Motor Driving Training School is a <strong>Government-authorized Motor Driving Training School</strong> approved by the Delhi Transport Department. With over <strong>30 years of experience</strong>, we have been transforming beginners into confident, safe drivers.</p>
                     <p>Our commitment to quality training and customer satisfaction has made us one of the most trusted driving schools in Rohini, New Delhi. We take pride in our structured learning approach, certified instructors, and well-maintained fleet of vehicles.</p>
                     <div class="about-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
+                        <div class="feature-item" data-animate="fade-up" data-delay="0">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                             <span>Government Authorized</span>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
+                        <div class="feature-item" data-animate="fade-up" data-delay="100">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                             <span>30+ Years Experience</span>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
+                        <div class="feature-item" data-animate="fade-up" data-delay="200">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                             <span>Certified Instructors</span>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
+                        <div class="feature-item" data-animate="fade-up" data-delay="300">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                             <span>License Assistance</span>
                         </div>
                     </div>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Road Divider -->
+    <div class="road-divider" aria-hidden="true">
+        <div class="road-line"></div>
+    </div>
+
     <!-- Courses Section -->
     <section class="courses" id="courses">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="subtitle">Our Courses</span>
                 <h2>Professional Driving Training Programs</h2>
                 <div class="header-line"></div>
                 <p>Comprehensive training programs tailored to meet your specific needs</p>
             </div>
             <div class="courses-grid">
-                <div class="course-card">
+                <div class="course-card" data-animate="slide-up" data-delay="0">
                     <div class="course-icon">
                         <i class="fas fa-motorcycle"></i>
                     </div>
@@ -217,7 +260,7 @@
                     </ul>
                     <a href="#contact" class="btn btn-outline">Enroll Now</a>
                 </div>
-                <div class="course-card featured">
+                <div class="course-card featured" data-animate="slide-up" data-delay="100">
                     <div class="featured-badge">Most Popular</div>
                     <div class="course-icon">
                         <i class="fas fa-car"></i>
@@ -232,7 +275,7 @@
                     </ul>
                     <a href="#contact" class="btn btn-primary">Enroll Now</a>
                 </div>
-                <div class="course-card">
+                <div class="course-card" data-animate="slide-up" data-delay="200">
                     <div class="course-icon">
                         <i class="fas fa-clipboard-check"></i>
                     </div>
@@ -246,7 +289,7 @@
                     </ul>
                     <a href="#contact" class="btn btn-outline">Enroll Now</a>
                 </div>
-                <div class="course-card">
+                <div class="course-card" data-animate="slide-up" data-delay="300">
                     <div class="course-icon">
                         <i class="fas fa-file-alt"></i>
                     </div>
@@ -264,66 +307,71 @@
         </div>
     </section>
 
+    <!-- Road Divider -->
+    <div class="road-divider dark" aria-hidden="true">
+        <div class="road-line"></div>
+    </div>
+
     <!-- Why Choose Us Section -->
     <section class="why-choose-us" id="why-choose-us">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="subtitle">Why Choose Us</span>
                 <h2>Why Learn With Us?</h2>
                 <div class="header-line"></div>
                 <p>Experience the difference of professional driving education</p>
             </div>
             <div class="why-us-grid">
-                <div class="why-us-card">
+                <div class="why-us-card" data-animate="scale-in" data-delay="0">
                     <div class="why-us-icon">
                         <i class="fas fa-history"></i>
                     </div>
                     <h3>30+ Years Experience</h3>
                     <p>Three decades of excellence in driving training with proven track record</p>
                 </div>
-                <div class="why-us-card">
+                <div class="why-us-card" data-animate="scale-in" data-delay="100">
                     <div class="why-us-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
                     <h3>Government Approved</h3>
                     <p>Authorized by Delhi Transport Department for quality training</p>
                 </div>
-                <div class="why-us-card">
+                <div class="why-us-card" data-animate="scale-in" data-delay="200">
                     <div class="why-us-icon">
                         <i class="fas fa-user-tie"></i>
                     </div>
                     <h3>Skilled Trainers</h3>
                     <p>Certified and experienced instructors dedicated to your success</p>
                 </div>
-                <div class="why-us-card">
+                <div class="why-us-card" data-animate="scale-in" data-delay="300">
                     <div class="why-us-icon">
                         <i class="fas fa-smile"></i>
                     </div>
                     <h3>Beginner Friendly</h3>
                     <p>Patient teaching approach perfect for those with no prior experience</p>
                 </div>
-                <div class="why-us-card">
+                <div class="why-us-card" data-animate="scale-in" data-delay="400">
                     <div class="why-us-icon">
                         <i class="fas fa-car"></i>
                     </div>
                     <h3>Well-Maintained Vehicles</h3>
                     <p>Modern, safe and well-serviced vehicles for optimal learning</p>
                 </div>
-                <div class="why-us-card">
+                <div class="why-us-card" data-animate="scale-in" data-delay="500">
                     <div class="why-us-icon">
                         <i class="fas fa-clock"></i>
                     </div>
                     <h3>Flexible Timings</h3>
                     <p>Training slots available throughout the week to suit your schedule</p>
                 </div>
-                <div class="why-us-card">
+                <div class="why-us-card" data-animate="scale-in" data-delay="600">
                     <div class="why-us-icon">
                         <i class="fas fa-list-ol"></i>
                     </div>
                     <h3>Structured Learning</h3>
                     <p>Systematic curriculum designed for comprehensive skill development</p>
                 </div>
-                <div class="why-us-card">
+                <div class="why-us-card" data-animate="scale-in" data-delay="700">
                     <div class="why-us-icon">
                         <i class="fas fa-hand-holding-usd"></i>
                     </div>
@@ -334,19 +382,24 @@
         </div>
     </section>
 
+    <!-- Road Divider -->
+    <div class="road-divider" aria-hidden="true">
+        <div class="road-line"></div>
+    </div>
+
     <!-- Trainers Section -->
     <section class="trainers" id="trainers">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="subtitle">Our Team</span>
                 <h2>Meet Our Expert Trainers</h2>
                 <div class="header-line"></div>
                 <p>Learn from experienced and certified driving instructors</p>
             </div>
             <div class="trainers-grid">
-                <div class="trainer-card">
+                <div class="trainer-card" data-animate="flip-in" data-delay="0">
                     <div class="trainer-image">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face" alt="Trainer">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face" alt="Rajesh Kumar - Senior Instructor" loading="lazy">
                     </div>
                     <h3>Rajesh Kumar</h3>
                     <p class="trainer-role">Senior Instructor</p>
@@ -359,9 +412,9 @@
                         <i class="fas fa-star"></i>
                     </div>
                 </div>
-                <div class="trainer-card">
+                <div class="trainer-card" data-animate="flip-in" data-delay="100">
                     <div class="trainer-image">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Trainer">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Mohammad Ali - Driving Instructor" loading="lazy">
                     </div>
                     <h3>Mohammad Ali</h3>
                     <p class="trainer-role">Driving Instructor</p>
@@ -374,9 +427,9 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                 </div>
-                <div class="trainer-card">
+                <div class="trainer-card" data-animate="flip-in" data-delay="200">
                     <div class="trainer-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Trainer">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Suresh Patel - Road Test Expert" loading="lazy">
                     </div>
                     <h3>Suresh Patel</h3>
                     <p class="trainer-role">Road Test Expert</p>
@@ -389,9 +442,9 @@
                         <i class="fas fa-star"></i>
                     </div>
                 </div>
-                <div class="trainer-card">
+                <div class="trainer-card" data-animate="flip-in" data-delay="300">
                     <div class="trainer-image">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face" alt="Trainer">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face" alt="Vikram Singh - Two-Wheeler Specialist" loading="lazy">
                     </div>
                     <h3>Vikram Singh</h3>
                     <p class="trainer-role">Two-Wheeler Specialist</p>
@@ -408,17 +461,22 @@
         </div>
     </section>
 
+    <!-- Road Divider -->
+    <div class="road-divider" aria-hidden="true">
+        <div class="road-line"></div>
+    </div>
+
     <!-- Reviews Section -->
     <section class="reviews" id="reviews">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="subtitle">Testimonials</span>
                 <h2>What Our Students Say</h2>
                 <div class="header-line"></div>
             </div>
-            <div class="reviews-summary">
+            <div class="reviews-summary" data-animate="scale-in">
                 <div class="rating-big">
-                    <span class="rating-number">3.9</span>
+                    <span class="rating-number" data-count="3.9" data-decimals="1">0</span>
                     <div class="rating-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -430,9 +488,9 @@
                 </div>
             </div>
             <div class="reviews-slider">
-                <div class="review-card">
+                <div class="review-card" data-animate="slide-up" data-delay="0">
                     <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=50&h=50&fit=crop&crop=face" alt="Reviewer">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=50&h=50&fit=crop&crop=face" alt="Amit Sharma" loading="lazy">
                         <div>
                             <h4>Amit Sharma</h4>
                             <div class="review-rating">
@@ -446,9 +504,9 @@
                     </div>
                     <p class="review-text">"Excellent driving school! The instructors are very patient and professional. I cleared my driving test in first attempt. Highly recommended!"</p>
                 </div>
-                <div class="review-card">
+                <div class="review-card" data-animate="slide-up" data-delay="100">
                     <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop&crop=face" alt="Reviewer">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop&crop=face" alt="Priya Verma" loading="lazy">
                         <div>
                             <h4>Priya Verma</h4>
                             <div class="review-rating">
@@ -462,9 +520,9 @@
                     </div>
                     <p class="review-text">"Very happy with the training. The structured approach really helped me gain confidence. The staff is supportive and the vehicles are well maintained."</p>
                 </div>
-                <div class="review-card">
+                <div class="review-card" data-animate="slide-up" data-delay="200">
                     <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Reviewer">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Rahul Gupta" loading="lazy">
                         <div>
                             <h4>Rahul Gupta</h4>
                             <div class="review-rating">
@@ -478,9 +536,9 @@
                     </div>
                     <p class="review-text">"Great experience! The government approval gave me confidence. The training was thorough and I got my license without any hassle. Thank you!"</p>
                 </div>
-                <div class="review-card">
+                <div class="review-card" data-animate="slide-up" data-delay="300">
                     <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="Reviewer">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="Anjali Singh" loading="lazy">
                         <div>
                             <h4>Anjali Singh</h4>
                             <div class="review-rating">
@@ -498,47 +556,52 @@
         </div>
     </section>
 
+    <!-- Road Divider -->
+    <div class="road-divider" aria-hidden="true">
+        <div class="road-line"></div>
+    </div>
+
     <!-- Gallery Section -->
     <section class="gallery" id="gallery">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="subtitle">Gallery</span>
                 <h2>Our Training Center</h2>
                 <div class="header-line"></div>
                 <p>A glimpse of our infrastructure and training sessions</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="assets/unnamed.jpg" alt="Driving School" loading="lazy">
+                <div class="gallery-item" data-animate="zoom-in" data-delay="0">
+                    <img src="assets/unnamed.jpg" alt="Driving School Training Area" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/unnamed (1).jpg" alt="Car Training" loading="lazy">
+                <div class="gallery-item" data-animate="zoom-in" data-delay="100">
+                    <img src="assets/unnamed (1).jpg" alt="Car Training Session" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-animate="zoom-in" data-delay="200">
                     <img src="assets/unnamed (2).jpg" alt="Driving Practice" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-animate="zoom-in" data-delay="300">
                     <img src="assets/unnamed (3).jpg" alt="Training Vehicle" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/unnamed (4).jpg" alt="Driving School" loading="lazy">
+                <div class="gallery-item" data-animate="zoom-in" data-delay="400">
+                    <img src="assets/unnamed (4).jpg" alt="Driving School Facilities" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-animate="zoom-in" data-delay="500">
                     <img src="assets/unnamed (5).jpg" alt="Traffic Training" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
@@ -548,17 +611,22 @@
         </div>
     </section>
 
+    <!-- Road Divider -->
+    <div class="road-divider" aria-hidden="true">
+        <div class="road-line"></div>
+    </div>
+
     <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="subtitle">FAQ</span>
                 <h2>Frequently Asked Questions</h2>
                 <div class="header-line"></div>
                 <p>Find answers to common questions about our driving training</p>
             </div>
             <div class="faq-container">
-                <div class="faq-item">
+                <div class="faq-item" data-animate="slide-right" data-delay="0">
                     <button class="faq-question">
                         <span>What documents are required for driving license?</span>
                         <i class="fas fa-chevron-down"></i>
@@ -567,7 +635,7 @@
                         <p>For applying for a driving license, you typically need: Age proof (18+), Address proof, Passport size photographs, Medical certificate, and valid ID proofs like Aadhaar card, Voter ID, or Passport.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" data-animate="slide-right" data-delay="100">
                     <button class="faq-question">
                         <span>How long does the driving training take?</span>
                         <i class="fas fa-chevron-down"></i>
@@ -576,7 +644,7 @@
                         <p>The duration depends on the package you choose. Basic training takes about 10-15 hours, Standard takes 20-25 hours, and Advanced package covers 30+ hours. Most students complete training in 2-4 weeks.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" data-animate="slide-right" data-delay="200">
                     <button class="faq-question">
                         <span>What are the payment modes available?</span>
                         <i class="fas fa-chevron-down"></i>
@@ -585,7 +653,7 @@
                         <p>We accept multiple payment modes including Cash, UPI (Google Pay, PhonePe, Paytm), Bank Transfer, and Credit/Debit Cards. We also offer easy EMI options for select packages.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" data-animate="slide-right" data-delay="300">
                     <button class="faq-question">
                         <span>Do you provide vehicles for the driving test?</span>
                         <i class="fas fa-chevron-down"></i>
@@ -594,7 +662,7 @@
                         <p>Yes, we provide well-maintained vehicles for the driving test. Our vehicles are government-approved and meet all RTO requirements for the driving test.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" data-animate="slide-right" data-delay="400">
                     <button class="faq-question">
                         <span>Can I choose my training timings?</span>
                         <i class="fas fa-chevron-down"></i>
@@ -603,7 +671,7 @@
                         <p>Absolutely! We offer flexible training timings from 7 AM to 8 PM on all weekdays. You can choose slots that suit your schedule. Weekend batches are also available.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" data-animate="slide-right" data-delay="500">
                     <button class="faq-question">
                         <span>What makes your school government approved?</span>
                         <i class="fas fa-chevron-down"></i>
@@ -616,10 +684,15 @@
         </div>
     </section>
 
+    <!-- Road Divider -->
+    <div class="road-divider" aria-hidden="true">
+        <div class="road-line"></div>
+    </div>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="subtitle">Contact Us</span>
                 <h2>Get In Touch</h2>
                 <div class="header-line"></div>
@@ -627,7 +700,7 @@
             </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="info-card">
+                    <div class="info-card" data-animate="slide-left" data-delay="0">
                         <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
@@ -636,7 +709,7 @@
                             <p>G-30/146-147, Sector 3<br>Rohini, New Delhi<br>Delhi 110085</p>
                         </div>
                     </div>
-                    <div class="info-card">
+                    <div class="info-card" data-animate="slide-left" data-delay="100">
                         <div class="info-icon">
                             <i class="fas fa-phone-alt"></i>
                         </div>
@@ -645,7 +718,7 @@
                             <p><a href="tel:+919871536071">+91 98715 36071</a></p>
                         </div>
                     </div>
-                    <div class="info-card">
+                    <div class="info-card" data-animate="slide-left" data-delay="200">
                         <div class="info-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -654,7 +727,7 @@
                             <p>info@newgopaldriving.com</p>
                         </div>
                     </div>
-                    <div class="info-card">
+                    <div class="info-card" data-animate="slide-left" data-delay="300">
                         <div class="info-icon">
                             <i class="fas fa-clock"></i>
                         </div>
@@ -663,14 +736,14 @@
                             <p>Monday - Saturday: 7:00 AM - 8:00 PM<br>Sunday: 8:00 AM - 2:00 PM</p>
                         </div>
                     </div>
-                    <div class="social-links">
+                    <div class="social-links" data-animate="fade-up" data-delay="400">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="https://wa.me/919871536071" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
+                <div class="contact-form-wrapper" data-animate="slide-right" data-delay="200">
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
                             <label for="name">Full Name</label>
@@ -700,12 +773,13 @@
                             <span class="error-message"></span>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i> Send Message
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
                 </div>
             </div>
-            <div class="map-wrapper">
+            <div class="map-wrapper" data-animate="fade-up">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.563589423!2d77.1039!3d28.7396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013a5a3f0f0f%3A0x3a3a3a3a3a3a3a3a!2sSector%203%2C%20Rohini%2C%20New%20Delhi%2C%20Delhi%20110085!5e0!3m2!1sen!2sin!4v1635789012345!5m2!1sen!2sin" 
                     width="100%" 
@@ -724,7 +798,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-section" data-animate="fade-up" data-delay="0">
                     <div class="footer-logo">
                         <div class="logo-icon">
                             <i class="fas fa-shield-alt"></i>
@@ -742,7 +816,7 @@
                         <a href="https://wa.me/919871536071" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="footer-section">
+                <div class="footer-section" data-animate="fade-up" data-delay="100">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
@@ -751,7 +825,7 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-section" data-animate="fade-up" data-delay="200">
                     <h3>Courses</h3>
                     <ul class="footer-links">
                         <li><a href="#courses">Two-Wheeler Training</a></li>
@@ -760,7 +834,7 @@
                         <li><a href="#courses">License Assistance</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-section" data-animate="fade-up" data-delay="300">
                     <h3>Contact Info</h3>
                     <ul class="footer-contact">
                         <li><i class="fas fa-map-marker-alt"></i> G-30/146-147, Sector 3, Rohini</li>
